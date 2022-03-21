@@ -19,13 +19,13 @@ function dns() {
 dns();
 
 function getdata() {
-    url = "http://ip-api.com/json/";
+    url = "https://ipapi.co/json";
     fetch(url).then((response) => {
         return response.json();
     }).then((data) => {
         console.log(data);
-        document.getElementById("id01").innerHTML = data.isp + ", " + data.city + ", ";
-        document.getElementById("ipdetail").innerHTML = "IP: " + data.query;
+        document.getElementById("id01").innerHTML = data.org + ", " + data.city + ", ";
+        document.getElementById("ipdetail").innerHTML = "IP: " + data.ip;
     })
 }
 
