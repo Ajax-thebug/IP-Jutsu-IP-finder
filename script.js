@@ -1,22 +1,22 @@
 
 
-function dns() {
-    url = "http://edns.ip-api.com/json";   
-    fetch(url).then((response) => {
-        return response.json();
+// function dns() {
+//     url = "http://edns.ip-api.com/json";   
+//     fetch(url).then((response) => {
+//         return response.json();
 
-    // To Store the Object/JSON datadns is created.
+//     // To Store the Object/JSON datadns is created.
     
-    }).then((datadns) => {
-        console.log(datadns);
+//     }).then((datadns) => {
+//         console.log(datadns);
 
-    // If its nested I just have to use names not numbers
+//     // If its nested I just have to use names not numbers
 
-        document.getElementById("dnsdata").innerHTML = "DNS Info => " + datadns.dns.geo;
-    })
-}
+//         document.getElementById("dnsdata").innerHTML = "DNS Info => " + datadns.dns.geo;
+//     })
+// }
 
-dns();
+// dns();
 
 function getdata() {
     url = "https://ipapi.co/json";
